@@ -1,0 +1,143 @@
+@font-face {
+  font-family: healB;
+  src: url("fonts/HealTheWebB-Regular.otf");
+  /* font-feature-settings: "aalt"; */
+}
+@font-face {
+  font-family: healA;
+  src: url("fonts/HealTheWebA-Regular.otf");
+}
+@font-face {
+  font-family: basker1;
+  src: url("fonts/BBBBaskervvol-Base.woff"),
+    url("fonts/BBBBaskervvol-Base.woff2");
+}
+@font-face {
+  font-family: basker2;
+  src: url("fonts/BBBBaskervvol-Fondue.woff"),
+    url("fonts/BBBBaskervvol-Fondue.woff2");
+}
+:root {
+  /* --accent: #0000ff; */
+  --accent: #f99802;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0px;
+  /* text-align: center; */
+  font-size: 2rem;
+  font-family: healB;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+.block {
+  margin: 1rem;
+  padding: 2rem 1rem 2.5rem 1rem;
+  border: 1px solid lightgray;
+  width: 30vw;
+  transition: all 0.5s ease;
+}
+.block.block:nth-child(2n) {
+  transform: translateX(+10%);
+}
+.block.block:nth-child(2n + 1) {
+  transform: translateX(-10%);
+}
+.block.date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 1rem;
+}
+.block-content {
+  font-size: 1.8rem;
+  font-family: basker1;
+  /* margin: 0.5rem; */
+}
+.block-content-alter {
+  font-size: 1.8rem;
+  color: white;
+  /* font-family: basker1; */
+}
+.block-header {
+  /* color: var(--accent); */
+  font-size: 2.5rem;
+}
+.block-img-alter {
+  width: 60%;
+  /* height: 80%; */
+  position: absolute;
+  right: -1rem;
+  top: 0;
+  transform: translateX(100%);
+}
+.block-content-link {
+  color: var(--accent);
+}
+.block-header-alter {
+  /* color: var(--accent); */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+.block-content-list {
+  font-family: healA;
+}
+.block-content-list li {
+  margin-bottom: 0.5rem;
+}
+.block.links {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: healA;
+  background-color: black;
+}
+::selection {
+  background: #f99802;
+  color: white;
+}
+/*
+
+hovers
+
+*/
+
+.block:nth-child(2n):hover {
+  transform: translateX(0);
+  cursor: ew-resize;
+}
+.block:nth-child(2n + 1):hover {
+  transform: translateX(0);
+  cursor: ew-resize;
+}
+.block.links:hover {
+  transform: translateX(10%);
+}
+.block.block-content-link:hover {
+  cursor: alias;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+  }
+  .block {
+    width: 90%;
+  }
+  .block-img-alter {
+    position: relative;
+    transform: none;
+  }
+}
