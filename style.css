@@ -74,8 +74,8 @@ body {
   font-size: 2.5rem;
 }
 .block-img-alter {
-  width: 60%;
-  /* height: 80%; */
+  /* width: 60%; */
+  height: 100%;
   position: absolute;
   right: -1rem;
   top: 0;
@@ -138,5 +138,7 @@ hovers
   .block-img-alter {
     position: relative;
     transform: none;
+    height: auto;
+    width: 50%;
   }
 }
