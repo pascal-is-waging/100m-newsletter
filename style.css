@@ -118,11 +118,11 @@ hovers
 
 .block:nth-child(2n):hover {
   transform: translateX(0);
-  cursor: wait;
+  cursor: e-resize;
 }
 .block:nth-child(2n + 1):hover {
   transform: translateX(0);
-  cursor: wait;
+  cursor: e-resize;
 }
 .block.links:hover {
   transform: translateX(10%);
