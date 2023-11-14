@@ -18,14 +18,17 @@
 }
 :root {
   /* --accent: #0000ff; */
-  /* --accent: #f99802; */
-  --accent: rgb(0 255 197);
+  --accent: #ffff00;
+  /* --accent: rgb(0 255 197); */
 }
 * {
   box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
+}
+a {
+  color: pink;
 }
 body {
   margin: 0px;
@@ -85,6 +88,7 @@ body {
 }
 .block-content-link {
   color: var(--accent);
+  background-color: black;
 }
 .block-header-alter {
   /* color: var(--accent); */
@@ -117,11 +121,13 @@ hovers
 */
 
 .block:nth-child(2n):hover {
-  transform: translateX(0);
+  transform: translateX(0) scale(1.1);
+  box-shadow: 0 0 80px 2px rgba(255, 255, 0, 0.2);
   cursor: e-resize;
 }
 .block:nth-child(2n + 1):hover {
-  transform: translateX(0);
+  transform: translateX(0) scale(1.1);
+
   cursor: e-resize;
 }
 .block.links:hover {
