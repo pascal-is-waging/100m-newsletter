@@ -79,12 +79,8 @@ body {
   font-size: 3.8rem;
 }
 .block-img-alter {
-  /* width: 60%; */
-  height: 100%;
-  position: absolute;
-  right: -1rem;
-  top: 0;
-  transform: translateX(100%);
+  width: 90%;
+  /* transform: translateX(100%); */
 }
 .block-content-link {
   color: var(--accent);
