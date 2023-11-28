@@ -109,7 +109,7 @@ body {
   background-color: black;
 }
 ::selection {
-  background: #f99802;
+  background: var(--back);
   color: white;
 }
 /*
